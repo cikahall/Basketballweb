@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoop Academy • Learn Basketball</title>
+    <style>
+        :root {
+            --primary: #ff6600;
+            --dark: #1a1a1a;
+            --light: #f8f8f8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1600x900/?basketball-court') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #ff8533;
+            transform: translateY(-5px);
+        }
+        
+        nav {
+            background: var(--dark);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px 0;
+        }
+        
+        nav ul li {
+            margin: 0 25px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 60px;
+            color: var(--dark);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-15px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 25px;
+        }
+        
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .basics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .skill-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .skill-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">HOOP ACADEMY</div>
+        <p class="tagline">Master the Game • One Skill at a Time</p>
+        <a href="#learn" class="cta-button">Start Learning Now</a>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#basics">Fundamentals</a></li>
+            <li><a href="#skills">Skills & Drills</a></li>
+            <li><a href="#rules">Rules & Strategy</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#videos">Video Lessons</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section / Introduction -->
+    <section id="learn" style="background: white;">
+        <h2>Welcome to Basketball Mastery</h2>
+        <p style="text-align: center; font-size: 1.3rem; max-width: 800px; margin: 0 auto 50px;">
+            Whether you're a complete beginner or an aspiring player, Hoop Academy provides everything you need to understand, 
+            play, and love the game of basketball.
+        </p>
+    </section>
+
+    <!-- Fundamentals Section -->
+    <section id="basics" style="background: #f8f8f8;">
+        <h2>Basketball Fundamentals</h2>
+        <div class="basics-grid">
+            <div class="skill-item">
+                <div class="skill-icon">🏀</div>
+                <h3>Dribbling</h3>
+                <p>Master ball control with proper hand placement, low stance, and fingertip control.</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🖐️</div>
+                <h3>Shooting</h3>
+                <p>Learn the BEEF principle (Balance, Eyes, Elbow, Follow-through) for consistent shooting.</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🏃</div>
+                <h3>Passing</h3>
+                <p>Chest pass, bounce pass, overhead pass — when and how to use each effectively.</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">🛡️</div>
+                <h3>Defense</h3>
+                <p>Stance, footwork, anticipation, and help defense fundamentals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Drills -->
+    <section id="skills">
+        <h2>Essential Skills & Drills</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://source.unsplash.com/random/600x400/?basketball-dribble" alt="Dribbling">
+                <div class="card-content">
+                    <h3>Advanced Dribbling Drills</h3>
+                    <p>Learn crossover, behind-the-back, and hesitation moves to beat defenders.</p>
+                    <a href="#" style="color: var(--primary); text-decoration: none; font-weight: bold;">→ View Drills</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://source.unsplash.com/random/600x400/?basketball-shooting" alt="Shooting">
+                <div class="card-content">
+                    <h3>Perfect Your Shot</h3>
+                    <p>Form shooting, free throws, mid-range, and three-point techniques.</p>
+                    <a href="#" style="color: var(--primary); text-decoration: none; font-weight: bold;">→ View Drills</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://source.unsplash.com/random/600x400/?basketball-layup" alt="Layups">
+                <div class="card-content">
+                    <h3>Layups & Finishing</h3>
+                    <p>Master both-hand layups, reverse layups, and euro-step finishes.</p>
+                    <a href="#" style="color: var(--primary); text-decoration: none; font-weight: bold;">→ View Drills</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" style="background: #f8f8f8;">
+        <h2>Rules & Strategy</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Basic Rules</h3>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>Traveling & Double Dribble</li>
+                        <li>Personal & Technical Fouls</li>
+                        <li>Shot Clock & Game Clock</li>
+                        <li>3-Second Violation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Positions & Roles</h3>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>Point Guard (PG)</li>
+                        <li>Shooting Guard (SG)</li>
+                        <li>Small Forward (SF)</li>
+                        <li>Power Forward (PF)</li>
+                        <li>Center (C)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Offensive & Defensive Strategies</h3>
+                    <p>Pick & Roll, Zone Defense, Man-to-Man, Fast Break, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Lessons -->
+    <section id="videos">
+        <h2>Featured Video Lessons</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/watch?v=7up5JWqsmBY" 
+                    title="Basketball Fundamentals" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+        <p style="text-align: center; margin-top: 30px; color: #666;">
+            Replace the video embed with your favorite basketball tutorial videos
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo" style="color: var(--primary); font-size: 2.5rem;">HOOP ACADEMY</div>
+        <p style="margin: 20px 0;">Learn • Practice • Play • Repeat</p>
+        <p>&copy; 2026 Hoop Academy. Made for basketball lovers everywhere.</p>
+    </footer>
+
+</body>
+</html>
